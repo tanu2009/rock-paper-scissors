@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Skill Safari | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+  <div class="container pt-5">
+    <header>
+      <h1 >
+        ROCK
+        <br>
+        PAPER
+        <br>
+        SCISSORS
+      </h1>
+      <div class="score-container text-center">
+        <h3>SCORE</h3>
+        <p id="score">0</p>
+      </div>
+    </header>
+    <main class="pt-5" id="main">
+      <div class="circle circle-paper">
+      <button data-choice="paper" class="btn-circle btn-paper pick"><span class="wrap"><img src="images/icon-paper.svg" alt="paper icon"></span></button>
+      </div>
+      <button data-choice="scissors" class="btn-circle btn-scissors pick"><span class="wrap"><img src="images/icon-scissors.svg" alt="scissors icon"></span></button>
+      <button data-choice="rock" class="btn-circle btn-rock pick"><span class="wrap"><img src="images/icon-rock.svg" alt="rock icon"></span></button>
+    </main>
+
+    <div class="rules-modal" id="modal">
+        <img src="images/image-rules.svg" alt="rules">
+        <button id="close"><img src="images/icon-close.svg"></button>
+    </div>
+    <button class="btn-rules" id="open">RULES</button>
+  </div>
+  <div class="selection" id="selection">
+    <div class="row justify-content-center pt-5 ">
+     <div>
+       <h2 class="text-white">You Picked</h2>
+       <button class="btn-circle btn-paper" data-choice="paper" id="user-selects"><span class="wrap"><img src="images/icon-paper.svg" alt="paper icon"></span></button>
+     </div>
+
+     <div class="down">
+       <h1 class="text-white">You
+         <span id="win">win</span></h1>
+       <button class="btn bg-white pt-3" id="play">PLAY AGAIN</button>
+     </div>
+
+     <div>
+       <div>
+         <h2 class="text-white">The House Picked</h2>
+         <button class="btn-circle btn-rock" data-choice="rock" id="computer-selects"><span class="wrap"><img src="images/icon-rock.svg" alt="rock icon"></span></button>
+       </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+ 
+
+
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
